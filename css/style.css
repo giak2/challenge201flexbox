@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+img{
+    width: 75%
+}
+
+.flex-container{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    background-color: skyblue;
+    flex-direction: row;
+    /* shifts items on main-axis */
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.item{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background: lightcyan;
+    border: 6px solid goldenrod;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.itemA{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background: lightcyan;
+    border: 6px solid goldenrod;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    animation: borderAnimation 5s infinite;
+}
+
+.itemB{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background: lightcyan;
+    border: 6px solid goldenrod;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    animation: widthAnimation 5s infinite;
+}
+
+.itemC{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background: lightcyan;
+    border: 6px solid goldenrod;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    animation: textAnimation 5s infinite;
+}
+
+.nav-flex-container{
+    display: flex;
+    background-color: lightblue;
+    width: 100vw;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item{
+    padding: 10px;
+    padding-top: 35px;
+    height: 100%
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover{
+    background-color: snow;
+    cursor: pointer;
+}
+
+@keyframes borderAnimation{
+    0% {
+      border-color: red;
+    }
+    50% {
+      border-color: yellow;
+    }
+    100% {
+      border-color: blue;
+    }
+}
+  
+@keyframes widthAnimation{
+    0% {
+      width: 10%;
+    }
+    50% {
+      width: 5%;
+    }
+    100% {
+      width: 10%;
+    }
+}
+
+@keyframes textAnimation{
+    0% {
+      color: blue;
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: yellow;
+    }
+}
